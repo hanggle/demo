@@ -1,0 +1,16 @@
+server:
+  port: 9091
+
+spring:
+  profiles:
+    active: dev
+    include: privilege
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+logging:
+  path: e:\\idea-logs
+  name: demo
+
+

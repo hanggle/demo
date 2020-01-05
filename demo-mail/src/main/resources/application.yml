@@ -1,0 +1,18 @@
+server:
+  port: 9091
+
+spring:
+  profiles:
+    active: dev
+    include: privilege
+  mail:
+    host: smtp.qq.com
+    username: 1063886625
+    password: dctuujzffenzbeed
+    default-encoding: utf-8
+    fromMail:
+      addr: hanggle@qq.com
+logging:
+  path: e:\\idea-logs
+  name: demo
+
