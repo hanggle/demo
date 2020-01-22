@@ -1,7 +1,6 @@
 package com.hanggle.demo.zk;
 
 import org.I0Itec.zkclient.ZkClient;
-import org.apache.zookeeper.CreateMode;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -22,6 +21,7 @@ public class ZkClientTest {
         zkClient.createEphemeralSequential("/test", "testdata");
         zkClient.createEphemeralSequential("/test", "testdata");
         TimeUnit.SECONDS.sleep(5);
+
     }
 
 }
