@@ -1,4 +1,4 @@
-package com.hanggle.demo.swagger;
+package com.hanggle.demo.doc.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;

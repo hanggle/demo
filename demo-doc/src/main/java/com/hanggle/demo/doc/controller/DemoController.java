@@ -1,4 +1,4 @@
-package com.hanggle.demo.controller;
+package com.hanggle.demo.doc.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
