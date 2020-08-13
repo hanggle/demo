@@ -24,11 +24,12 @@ public class Server {
                     .channel(NioServerSocketChannel.class)
                     .option(ChannelOption.SO_BACKLOG, 128) //设置线程队列得到的连接数
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
+                    .handler(null) // bossGroup中的handler
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast(new ServerHandler());
                         }
-                    });
+                    }); // workGroup中的handler
             System.out.println("服务器已准备好");
 
             // 绑定端口,并且同步。同时启动服务器
